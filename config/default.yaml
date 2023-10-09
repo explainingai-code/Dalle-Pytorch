@@ -1,0 +1,34 @@
+dataset_params:
+  root_dir: 'data'
+  image_size: 112
+  drop_background_prob: 0.1
+  drop_color_prob: 0.1
+
+model_params:
+  vae_num_embeddings: 2048
+  vae_embedding_dim : 1024
+  # Will be 112/8 as we have 3 downsamples
+  dalle_image_size: 14
+
+gpt_config:
+  embd_pdrop: 0.1
+  resid_pdrop: 0.1
+  attn_pdrop: 0.1
+  n_layer: 4
+  n_head: 8
+  n_embd: 512
+
+train_params:
+  task_name: 'default'
+  batch_size: 64
+  dalle_batch_size: 256
+  num_epochs: 40
+  num_epochs_dalle: 50
+  dalle_image_loss: 10
+  kl_weight: 0
+  lr: 0.001
+  crit: 'l1'
+  seed: 1111
+  save_vae_training_image: True
+  vae_ckpt_name: 'vae_ckpt.pth'
+  dalle_ckpt_name: 'dalle_ckpt.pth'
