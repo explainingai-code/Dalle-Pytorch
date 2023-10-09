@@ -17,6 +17,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 def train_for_one_epoch(epoch_idx, model, mnist_loader, optimizer, crtierion, config):
     losses = []
+    count = 0
     for data in tqdm(mnist_loader):
         # For vae we only need images
         im = data['image']
@@ -36,6 +37,7 @@ def train_for_one_epoch(epoch_idx, model, mnist_loader, optimizer, crtierion, co
         losses.append(loss.item())
         loss.backward()
         optimizer.step()
+        count += 1
         
     print('Finished epoch: {} | Loss : {:.4f} '.
           format(epoch_idx + 1,
