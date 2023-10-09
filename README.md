@@ -2,9 +2,11 @@ DallE Implementation in pytorch with generation using mingpt
 ========
 
 This repository implements DallE-1 on a synthetic dataset of mnist colored numbers on textures/solid background .
+
 [Video on DallE](https://www.youtube.com/watch?v=wX5LP8n9WAQ)
 
 Sample from dataset
+
 <img src="https://github.com/explainingai-code/DallE/assets/144267687/57e3c091-4600-401d-a5a4-52ea5fda3249" width="300">
 
 
@@ -14,21 +16,6 @@ A lot of parts of the implementation have been taken from below two repositories
 2. Parts of DallE implementation from https://github.com/lucidrains/DALLE-pytorch/tree/main/dalle_pytorch . 
 
    I have only kept the minimal version of Dalle which allows us to get decent results(on this dataset) and play around with it. If you are looking for a much more efficient and complete implementation please use this repo.
-   
-
-# Quickstart
-* Create a new conda environment with python 3.8 then run below commands
-* ```git clone https://github.com/explainingai-code/DallE.git```
-* ```cd DallE```
-* ```pip install -r requirements.txt```
-* For training/inferencing discrete vae and gpt use the below commands passing the desired configuration file as the config argument in case you want to play with it. 
-* ```python -m tools.train_dvae``` for training discrete vae
-* ```python -m tools.infer_dvae``` for generating reconstructions
-* ```python -m tools.train_dalle``` for training minimal version of DallE 
-* ```python -m tools.generate_image``` for using the trained DallE to generate images
-
-## Configuration
-* ```config/default.yaml``` - Allows you to play with different components of discrete vae as well as DallE and play around with these modifications 
 
 ## Data preparation
 For setting up the mnist dataset:
@@ -50,6 +37,21 @@ DallE/data/train.json
 DallE/data/test.json
 ```
 
+# Quickstart
+* Create a new conda environment with python 3.8 then run below commands
+* ```git clone https://github.com/explainingai-code/DallE.git```
+* ```cd DallE```
+* ```pip install -r requirements.txt```
+* For training/inferencing discrete vae and gpt use the below commands passing the desired configuration file as the config argument in case you want to play with it. 
+* ```python -m tools.train_dvae``` for training discrete vae
+* ```python -m tools.infer_dvae``` for generating reconstructions
+* ```python -m tools.train_dalle``` for training minimal version of DallE 
+* ```python -m tools.generate_image``` for using the trained DallE to generate images
+
+## Configuration
+* ```config/default.yaml``` - Allows you to play with different components of discrete vae as well as DallE and play around with these modifications 
+
+
 ## Output 
 Outputs will be saved according to the configuration present in yaml files.
 
@@ -65,8 +67,28 @@ During inference the following output will be saved
 
 ## Sample Output for DallE
 
-Running default config Discrete should give you below reconstructions for both versions
-![dvae_reconstructions](https://github.com/explainingai-code/DallE/assets/144267687/fccf876d-fb35-4ed5-9729-b3645690370e)
+Running default config DiscreteVAE should give you below reconstructions (left - input | right - reconstruction)
+
+<img src="https://github.com/explainingai-code/DallE/assets/144267687/fccf876d-fb35-4ed5-9729-b3645690370e" width="300">
 
 Sample Generation Output after 40 epochs with 4 layers and 512 hidden dimension and 8 attention heads 
+
+Generate 0 in blue and solid background of olive
+
+Generate 1 in cyan and texture background of cracker
+
+Generate 6 in pink and texture background of stones
+
+Generate 8 in red and texture background of lego
+
+<img src="https://github.com/explainingai-code/DallE/assets/144267687/e5cbc440-9a07-4439-96b8-d9a446e8b293" width="100">
+<img src="https://github.com/explainingai-code/DallE/assets/144267687/a6f41119-8cfd-4536-8267-8d05b3a6154f" width="100">
+<img src="https://github.com/explainingai-code/DallE/assets/144267687/7bdd3e44-5c3d-46e4-aaaa-67f08a6c6591" width="100">
+<img src="https://github.com/explainingai-code/DallE/assets/144267687/6aac0a2e-4264-4691-990c-0f93156ddb7d" width="100">
+
+
+
+
+
+
 
