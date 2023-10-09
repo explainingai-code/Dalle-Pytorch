@@ -81,10 +81,10 @@ Generate 6 in pink and texture background of stones
 
 Generate 8 in red and texture background of lego
 
-<img src="https://github.com/explainingai-code/DallE/assets/144267687/e5cbc440-9a07-4439-96b8-d9a446e8b293" width="100">
-<img src="https://github.com/explainingai-code/DallE/assets/144267687/a6f41119-8cfd-4536-8267-8d05b3a6154f" width="100">
-<img src="https://github.com/explainingai-code/DallE/assets/144267687/7bdd3e44-5c3d-46e4-aaaa-67f08a6c6591" width="100">
-<img src="https://github.com/explainingai-code/DallE/assets/144267687/6aac0a2e-4264-4691-990c-0f93156ddb7d" width="100">
+<img src="https://github.com/explainingai-code/DallE/assets/144267687/e5cbc440-9a07-4439-96b8-d9a446e8b293" width="50">
+<img src="https://github.com/explainingai-code/DallE/assets/144267687/a6f41119-8cfd-4536-8267-8d05b3a6154f" width="50">
+<img src="https://github.com/explainingai-code/DallE/assets/144267687/7bdd3e44-5c3d-46e4-aaaa-67f08a6c6591" width="50">
+<img src="https://github.com/explainingai-code/DallE/assets/144267687/6aac0a2e-4264-4691-990c-0f93156ddb7d" width="50">
 
 
 
