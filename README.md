@@ -22,7 +22,8 @@ For setting up the mnist dataset:
 Follow - https://github.com/explainingai-code/Pytorch-VAE#data-preparation
 
 Download Quarter RGB resolution texture data from [ALOT Homepage](https://aloi.science.uva.nl/public_alot/)
-In case you want to train on higher resolution, you can download that as well and code should work for that also
+In case you want to train on higher resolution, you can download that as well and but you would have to create new train.json and test.json.
+Rest of the code should work fine as long as you create valid json files.
 
 Download train.json and test.json from [Drive](https://drive.google.com/drive/folders/1DSpNaM6hk8VNFVKHs-VK97AlP_8ynRKC?usp=sharing)
 Verify the data directory has the following structure after textures download
