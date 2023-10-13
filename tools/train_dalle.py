@@ -124,7 +124,7 @@ def train(args):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Arguments for conditional vae training')
+    parser = argparse.ArgumentParser(description='Arguments for dalle training')
     parser.add_argument('--config', dest='config_path',
                         default='config/default.yaml', type=str)
     args = parser.parse_args()
