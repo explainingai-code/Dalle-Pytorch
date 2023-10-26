@@ -3,7 +3,7 @@ DallE Implementation in pytorch with generation using mingpt
 
 This repository implements DallE-1 on a synthetic dataset of mnist colored numbers on textures/solid background .
 
-[Video on DallE](https://www.youtube.com/watch?v=wX5LP8n9WAQ)
+[My(ExplainingAI) Video on DallE](https://www.youtube.com/watch?v=wX5LP8n9WAQ)
 
 Sample from dataset
 
