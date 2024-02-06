@@ -6,7 +6,7 @@ This repository implements DallE-1 [Zero-Shot Text-to-Image Generation](https://
 
 ## DallE Tutorial Video
 <a href="https://www.youtube.com/watch?v=wX5LP8n9WAQ">
-   <img alt="DallE Tutorial" src="https://github.com/explainingai-code/Dalle-Pytorch/assets/144267687/ef00b1f7-e611-4eb2-a610-c8d86bc9aa1a"
+   <img alt="DallE Tutorial" src="https://github.com/explainingai-code/Dalle-Pytorch/assets/144267687/5a3af0f0-6b9c-48bc-becb-1d06e6095ada"
    width="300">
 </a>
 
