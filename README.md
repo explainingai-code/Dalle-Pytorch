@@ -1,11 +1,16 @@
 DallE Implementation in pytorch with generation using mingpt
 ========
 
-This repository implements DallE-1 on a synthetic dataset of mnist colored numbers on textures/solid background .
+This repository implements DallE-1 [Zero-Shot Text-to-Image Generation](https://arxiv.org/abs/2102.12092) on a synthetic dataset of mnist colored numbers on textures/solid background .
 
-[My(ExplainingAI) Video on DallE](https://www.youtube.com/watch?v=wX5LP8n9WAQ)
 
-Sample from dataset
+## DallE Tutorial Video
+<a href="https://www.youtube.com/watch?v=wX5LP8n9WAQ">
+   <img alt="DallE Tutorial" src="https://github.com/explainingai-code/Dalle-Pytorch/assets/144267687/ef00b1f7-e611-4eb2-a610-c8d86bc9aa1a"
+   width="300">
+</a>
+
+## Sample from dataset
 
 <img src="https://github.com/explainingai-code/DallE/assets/144267687/57e3c091-4600-401d-a5a4-52ea5fda3249" width="300">
 
@@ -15,7 +20,7 @@ A lot of parts of the implementation have been taken from below two repositories
 1. GPT from - https://github.com/karpathy/minGPT/blob/master/mingpt/model.py
 2. Parts of DallE implementation from https://github.com/lucidrains/DALLE-pytorch/tree/main/dalle_pytorch . 
 
-   I have only kept the minimal version of Dalle which allows us to get decent results(on this dataset) and play around with it. If you are looking for a much more efficient and complete implementation please use this repo.
+   I have only kept the minimal version of Dalle which allows us to get decent results(on this dataset) and play around with it. If you are looking for a much more efficient and complete implementation please use the above repo.
 
 ## Data preparation
 For setting up the mnist dataset:
@@ -89,7 +94,17 @@ Generate 8 in red and texture background of lego
 
 
 
+## Citations
 
-
+```
+@misc{ramesh2021zeroshot,
+      title={Zero-Shot Text-to-Image Generation}, 
+      author={Aditya Ramesh and Mikhail Pavlov and Gabriel Goh and Scott Gray and Chelsea Voss and Alec Radford and Mark Chen and Ilya Sutskever},
+      year={2021},
+      eprint={2102.12092},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
 
