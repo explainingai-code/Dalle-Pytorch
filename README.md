@@ -27,6 +27,7 @@ For setting up the mnist dataset:
 Follow - https://github.com/explainingai-code/Pytorch-VAE#data-preparation
 
 Download Quarter RGB resolution texture data from [ALOT Homepage](https://aloi.science.uva.nl/public_alot/)
+
 If you are facing issues then use `curl`
 
 `curl -O https://aloi.science.uva.nl/public_alot/tars/alot_png4.tar`
